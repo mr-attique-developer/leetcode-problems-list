@@ -7,9 +7,10 @@ class Solution:
 
         while left <= right:
             mid = (left + right) // 2
-            if mid * mid == num:
+            square = mid * mid
+            if square == num:
                 return True
-            elif mid * mid > num:
+            elif square > num:
                 right = mid - 1
             else:
                 left = mid + 1
