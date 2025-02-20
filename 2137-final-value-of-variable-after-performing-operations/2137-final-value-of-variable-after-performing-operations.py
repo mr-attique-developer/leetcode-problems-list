@@ -2,8 +2,8 @@ class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
         X = 0
         for i in operations:
-            if i =="X++" or i == "++X":
+            if "+" in i :
                 X += 1
-            if i == "X--" or i == "--X":
+            else:
                 X -= 1
         return X
