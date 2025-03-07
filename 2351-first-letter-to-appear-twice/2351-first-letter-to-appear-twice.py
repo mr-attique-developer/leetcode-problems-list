@@ -1,9 +1,10 @@
 class Solution:
     def repeatedCharacter(self, s: str) -> str:
-        dic = {}
-
+        first = []
         for i in s:
-            if i not in dic:
-                dic[i] = 1
-            else:
-                return i
+            # print(i)
+            if i in first:
+                return i 
+                print(first)
+            first.append(i)    
+        
