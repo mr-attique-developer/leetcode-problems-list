@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/clear-digits/">3174. Clear Digits</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code>.</p>
+<h2><a href="https://leetcode.com/problems/clear-digits">3174. Clear Digits</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code>.</p>
 
 <p>Your task is to remove <strong>all</strong> digits by doing this operation repeatedly:</p>
 
@@ -7,6 +7,8 @@
 </ul>
 
 <p>Return the resulting string after removing all digits.</p>
+
+<p><strong>Note</strong> that the operation <em>cannot</em> be performed on a digit that does not have any non-digit character to its left.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
