@@ -3,10 +3,11 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if len(nums) <= 1:
+        n = len(nums)
+        if n <= 1:
             return nums
-        for i in range(len(nums)):
-            for j in range(len(nums) - 1 - i):
+        for i in range(n):
+            for j in range(n - 1 - i):
                 if nums[j] > nums[j+1]:
                     nums[j] , nums[j+1] = nums[j+1],nums[j]
                 else:
