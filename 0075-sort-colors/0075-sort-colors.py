@@ -7,7 +7,7 @@ class Solution:
         if n <= 1:
             return nums
         for i in range(n):
-            for j in range(n - 1 - i):
+            for j in range(n - 1 ):
                 if nums[j] > nums[j+1]:
                     nums[j] , nums[j+1] = nums[j+1],nums[j]
                 else:
