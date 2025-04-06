@@ -2,12 +2,12 @@ class Solution:
     def clearDigits(self, s: str) -> str:
         stack = []
 
-        for i in s:
-            if i.isdigit():
+        for num in s:
+            if num.isdigit():
                 if stack:
                     stack.pop()
             else:
-                stack.append(i)
+                stack.append(num)
         return "".join(stack)                  
 
                 
