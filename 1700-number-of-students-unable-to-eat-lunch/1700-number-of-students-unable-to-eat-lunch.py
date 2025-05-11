@@ -1,17 +1,10 @@
 class Solution:
     def countStudents(self, students: List[int], sandwiches: List[int]) -> int:
-        
-        count = 0 
-
-        while len(students) != 0:
-            if students[0] == sandwiches[0]:
-                students.pop(0)
-                sandwiches.pop(0)
-                count = 0
-            else:
-                count +=1
-                students.append(students.pop(0))
-            
-            if len(students) == count:
-                return count
-        return 0
+        count = [0, 0]
+        for student in students:
+            count[student] += 1
+        for sandwich in sandwiches:
+            if count[sandwich] == 0:
+                break
+            count[sandwich] -= 1
+        return sum(count)
